@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E-mail de ativação do CURSOS.ISPTEC.AO</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      /* Base */
+      body {
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #FAFAFA;
+        color: #222222;
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.25;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 24px;
+      }
+      table td {
+        vertical-align: top;
+      }
+      /* Layout */
+      .email-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .email-header {
+        background-color: #0070f3;
+        padding: 24px;
+        color: #ffffff;
+      }
+      .email-body {
+        padding: 24px;
+        background-color: #ffffff;
+      }
+      .email-footer {
+        background-color: #f6f6f6;
+        padding: 24px;
+      }
+
+      .text-gradient1 {
+        background: linear-gradient(90deg, #d9ca3e 2.34%, #5c3bd6 100.78%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+      }
+      /* Buttons */
+      .button {
+        display: inline-block;
+        background-color: #0070f3;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-wrapper">
+      <div class="email-header">
+        <h1>Bem-vindo ao CURSOS.<span>ISPTEC</span>.AO</h1>
+      </div>
+      <div class="email-body">
+        <p>Olá <%= user.name %>,</p>
+        <p>Obrigado por se registrar no CURSOS.ISPTEC.AO. Para ativar sua conta, use o seguinte código de ativação:</p>
+        <h2><%= activationCode %></h2>
+        <p>Insira este código na página de ativação nos próximos 5 minutos.</p>
+        <p>Se você não se registrou para uma conta CURSOS.ISPTEC.AO, ignore este e-mail.</p>
+      </div>
+      <div class="email-footer">
+        <p>Se você tiver alguma dúvida, não hesite em nos contatar em <a href="mailto:geral@cursos.isptec.ao">geral@cursos.isptec.ao</a></p>
+      </div>
+    </div>
+  </body>
+</html>
