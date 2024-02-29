@@ -10,10 +10,11 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only server.ts",
     "start": "node build/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false",
+    "migrate": "node migration-script.js",
+    "deploy": "railway up",
     "build": "tsc"
   },
-  "author": "shahriar sajeeb",
+  "author": "nilson goncalves",
   "license": "ISC",
   "dependencies": {
     "@types/bcryptjs": "^2.4.2",
