@@ -21,7 +21,7 @@ app.use(cookieParser());
 // cors => cross origin resource sharing
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://cursos-isptec-ao.vercel.app/"],
     credentials: true,
   })
 );
