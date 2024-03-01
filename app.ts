@@ -21,7 +21,7 @@ app.use(cookieParser());
 // cors => cross origin resource sharing
 app.use(
   cors({
-    origin: ["https://cursosisptecao.up.railway.app"],
+    origin: ["https://cursos.isptec.ao"],
     credentials: true,
   })
 );
