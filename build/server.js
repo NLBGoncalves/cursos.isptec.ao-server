@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const cloudinary_1 = require("cloudinary");
-const http_1 = __importDefault(require("http"));
+const http_1 = __importDefault(require("https"));
 const db_1 = __importDefault(require("./utils/db"));
 const socketServer_1 = require("./socketServer");
 const app_1 = require("./app");
