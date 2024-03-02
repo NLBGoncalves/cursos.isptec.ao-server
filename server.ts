@@ -1,10 +1,10 @@
 import {v2 as cloudinary} from "cloudinary";
-import http from "http";
+import https from "https";
 import connectDB from "./utils/db";
 import { initSocketServer } from "./socketServer";
 import { app } from "./app";
 require("dotenv").config();
-const server = http.createServer(app);
+const server = https.createServer(app);
 
 
 // cloudinary config

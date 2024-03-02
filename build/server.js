@@ -4,12 +4,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const cloudinary_1 = require("cloudinary");
-const http_1 = __importDefault(require("https"));
+const https_1 = __importDefault(require("https"));
 const db_1 = __importDefault(require("./utils/db"));
 const socketServer_1 = require("./socketServer");
 const app_1 = require("./app");
 require("dotenv").config();
-const server = http_1.default.createServer(app_1.app);
+const server = https_1.default.createServer(app_1.app);
 // cloudinary config
 cloudinary_1.v2.config({
     cloud_name: process.env.CLOUD_NAME,
