@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ELearning Activation Email</title>
+    <title>E-mail de ativação do CURSOS.ISPTEC.AO</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style type="text/css">
@@ -53,6 +53,14 @@
         background-color: #f6f6f6;
         padding: 24px;
       }
+
+      .text-gradient1 {
+        background: linear-gradient(90deg, #d9ca3e 2.34%, #5c3bd6 100.78%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+      }
       /* Buttons */
       .button {
         display: inline-block;
@@ -70,17 +78,17 @@
   <body>
     <div class="email-wrapper">
       <div class="email-header">
-        <h1>Welcome to ELearning</h1>
+        <h1>Bem-vindo ao CURSOS.<span>ISPTEC</span>.AO</h1>
       </div>
       <div class="email-body">
-        <p>Hello <%= user.name %>,</p>
-        <p>Thank you for registering with ELearning. To activate your account, please use the following activation code:</p>
+        <p>Olá <%= user.name %>,</p>
+        <p>Obrigado por se registrar no CURSOS.ISPTEC.AO. Para ativar sua conta, use o seguinte código de ativação:</p>
         <h2><%= activationCode %></h2>
-        <p>Please enter this code on the activation page within the next 5 minutes.</p>
-        <p>If you did not register for a ELearning account, please ignore this email.</p>
+        <p>Insira este código na página de ativação nos próximos 5 minutos.</p>
+        <p>Se você não se registrou para uma conta CURSOS.ISPTEC.AO, ignore este e-mail.</p>
       </div>
       <div class="email-footer">
-        <p>If you have any questions, please don't hesitate to contact us at <a href="mailto:support@becodemy.com">support@becodemy.com</a></p>
+        <p>Se você tiver alguma dúvida, não hesite em nos contatar em <a href="mailto:geral@cursos.isptec.ao">geral@isptec.ao</a></p>
       </div>
     </div>
   </body>

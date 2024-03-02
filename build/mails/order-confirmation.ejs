@@ -141,33 +141,40 @@
         margin: auto;
         padding: 10px 0;
       }
+      .text-gradient1 {
+        background: linear-gradient(90deg, #d9ca3e 2.34%, #5c3bd6 100.78%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="message-sm">
-        <h1>Your ELearning order is confirmed!</h1>
-        <p>And we're just as excited as you are.</p>
+        <h1>Seu pedido de CURSOS.ISPTEC.AO está confirmado!</h1>
+        <p>E estamos tão entusiasmados quanto você.</p>
       </div>
       <br>
       <br>
       <div class="course-info">
-        <h4>Here's what you ordered:</h4>
+        <h4>Aqui está o que você pediu:</h4>
          <table style="border-bottom: 1px solid #0000002f;">
             <tr>
                 <td>
-                    Order #: <%= order._id %>
+                    Ordem #: <%= order._id %>
                 </td>
                 <td>
-                        Order Date: <%= order.date %>
+                  Data do pedido: <%= order.date %>
                 </td>
             </tr>
          </table>
         <table style="width: 90%; margin: auto; display: block">
           <tr>
             <td class="first-td">Item</td>
-            <td class="first-td">Qty</td>
-            <td class="first-td">cost</td>
+            <td class="first-td">Quantidade</td>
+            <td class="first-td">custo</td>
           </tr>
         </table>
 
@@ -196,10 +203,10 @@
       </div>
       <div class="footer">
         <p>
-          If you have any questions, please contact our support team at
-          <a href="mailto:support@becodemy.com">support@becodemy.com</a>
+          Se você tiver alguma dúvida, entre em contato com nossa equipe de suporte em
+          <a href="mailto:geral@cursos.isptec.ao">geral@isptec.ao</a>
         </p>
-        <p>&copy; 2023 Elearning. All rights reserved.</p>
+        <p>&copy; 2024 CURSOS.ISPTEC.AO. Todos os direitos reservados.</p>
       </div>
     </div>
   </body>
